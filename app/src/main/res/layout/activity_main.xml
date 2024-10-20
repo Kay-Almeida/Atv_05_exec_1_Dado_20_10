@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spQtdDado"
+        android:layout_width="174dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvsaida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTexto2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="175dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTexto2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTexto1">
+
+        <RadioButton
+            android:id="@+id/rbD4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d4" />
+
+        <RadioButton
+            android:id="@+id/rbD6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d6" />
+
+        <RadioButton
+            android:id="@+id/rbD8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/d8" />
+
+        <RadioButton
+            android:id="@+id/rbD10"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:text="@string/d10"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/rbD12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d12" />
+
+        <RadioButton
+            android:id="@+id/rbD20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d20" />
+
+        <RadioButton
+            android:id="@+id/rbD100"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/d100"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnRodar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:text="@string/rodar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvsaida"
+        app:layout_constraintStart_toStartOf="@+id/tvsaida"
+        app:layout_constraintTop_toBottomOf="@+id/tvsaida" />
+
+    <TextView
+        android:id="@+id/tvsaida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRodar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spQtdDado" />
+
+    <TextView
+        android:id="@+id/tvTexto1"
+        android:layout_width="115dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/texto1"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvTexto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="@string/texto2"
+        app:layout_constraintBottom_toTopOf="@+id/spQtdDado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
